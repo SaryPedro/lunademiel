@@ -113,25 +113,20 @@ body {
 
     display: inline-block;
 
-    margin-bottom: 20px;
-
-    padding: 5px 10px;
-
-    border:
-        1px solid rgba(45, 41, 37, 0.25);
+    margin-bottom: 22px;
 
     font-family:
         "Special Elite",
         "Courier New",
         monospace;
 
-    font-size: 8px;
+    font-size: 11px;
 
-    letter-spacing: 1.8px;
+    letter-spacing: 2.2px;
 
     line-height: 1.2;
 
-    opacity: 0.58;
+    opacity: 0.62;
 }
 
 
@@ -608,13 +603,11 @@ h1 {
 
 
     .identificador-viaxe {
-        margin-bottom: 17px;
+          margin-bottom: 18px;
 
-        padding: 5px 9px;
+    font-size: 9px;
 
-        font-size: 7px;
-
-        letter-spacing: 1.5px;
+    letter-spacing: 1.7px;
     }
 
 
