@@ -122,34 +122,24 @@ h1 {
 
 
 .separador {
-    margin: 28px auto 27px;
-
-    width: 52px;
-    height: 52px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 28px 0 27px;
 
     font-family:
         "Special Elite",
         "Courier New",
         monospace;
 
-    font-size: 19px;
+    font-size: 25px;
 
     line-height: 1;
 
+    font-weight: 400;
+
     opacity: 0.72;
 
-    border:
-        1px solid rgba(45, 41, 37, 0.55);
-
-    border-radius: 50%;
+    letter-spacing: 1px;
 
     transform: rotate(-4deg);
-
-    position: relative;
 }
 
 
@@ -465,19 +455,6 @@ h1 {
 
         line-height: 1.04;
     }
-
-
-   .separador {
-    width: 48px;
-    height: 48px;
-
-    font-size: 17px;
-
-    margin:
-        25px
-        auto
-        23px;
-}
 
 
     .principal {
