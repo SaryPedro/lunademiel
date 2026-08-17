@@ -194,19 +194,17 @@ h1 {
 
     margin-bottom: 31px;
 
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 .imaxe-portada img {
     display: block;
 
     width: 100%;
-
     height: auto;
 
     object-fit: cover;
 }
-
 
 /* =====================================================
    MENSAxe
@@ -686,9 +684,7 @@ h1 {
 
     .imaxe-portada {
         margin-bottom: 27px;
-
-        border-radius: 6px;
-    }
+        border-radius: 8px;
 
 
     .principal {
