@@ -20,33 +20,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
     <main class="contenedor">
 
         <section class="tarxeta">
 
-            <p class="pre-titulo">
-                UN PEQUENO RECORDO
-            </p>
+
+            <!-- IDENTIFICADOR DA VIAXE -->
+
+            <div class="identificador-viaxe">
+                N2 · PORTUGAL · 2026
+            </div>
+
+
+            <!-- TÍTULO -->
 
             <h1>
                 A nosa<br>
                 lúa de mel
             </h1>
 
-            <h1>
-    A nosa<br>
-    lúa de mel
-</h1>
 
-<div class="identificador-viaxe">
-    N2 · PORTUGAL · 2026
-</div>
+            <!-- CORAZÓN -->
 
-<div class="separador">
-    ♡
-</div>
+            <div class="separador">
+                ♡
+            </div>
+
+
+            <!-- IMAXE -->
 
             <div class="imaxe-portada">
 
@@ -56,6 +60,9 @@
                     loading="eager">
 
             </div>
+
+
+            <!-- MENSAXE -->
 
             <div class="mensaxe">
 
@@ -74,41 +81,87 @@
 
             <!-- CONTA ATRÁS -->
 
-            <div id="conta-atras" class="conta-atras">
+            <div
+                id="conta-atras"
+                class="conta-atras">
 
                 <p class="conta-titulo">
                     Estará dispoñible en...
                 </p>
 
+
                 <div class="contador">
 
-                    <div class="unidade">
-                        <span id="dias">--</span>
-                        <small>días</small>
-                    </div>
-
-                    <span class="separador-contador">:</span>
 
                     <div class="unidade">
-                        <span id="horas">--</span>
-                        <small>horas</small>
+
+                        <span id="dias">
+                            --
+                        </span>
+
+                        <small>
+                            días
+                        </small>
+
                     </div>
 
-                    <span class="separador-contador">:</span>
+
+                    <span class="separador-contador">
+                        :
+                    </span>
+
 
                     <div class="unidade">
-                        <span id="minutos">--</span>
-                        <small>min</small>
+
+                        <span id="horas">
+                            --
+                        </span>
+
+                        <small>
+                            horas
+                        </small>
+
                     </div>
 
-                    <span class="separador-contador">:</span>
+
+                    <span class="separador-contador">
+                        :
+                    </span>
+
 
                     <div class="unidade">
-                        <span id="segundos">--</span>
-                        <small>seg</small>
+
+                        <span id="minutos">
+                            --
+                        </span>
+
+                        <small>
+                            min
+                        </small>
+
                     </div>
+
+
+                    <span class="separador-contador">
+                        :
+                    </span>
+
+
+                    <div class="unidade">
+
+                        <span id="segundos">
+                            --
+                        </span>
+
+                        <small>
+                            seg
+                        </small>
+
+                    </div>
+
 
                 </div>
+
 
                 <p class="data-publicacion">
                     3 de outubro de 2026 · 13:00
@@ -117,74 +170,93 @@
             </div>
 
 
-            <!-- MENSAXE QUE APARECERÁ DESPOIS DA DATA -->
+            <!--
+                MENSAXE QUE APARECERÁ
+                DESPOIS DA PUBLICACIÓN
+            -->
 
-<div id="publicado"
-     class="publicado"
-     hidden>
-
-    <p class="publicado-titulo">
-        Xa está aquí ♡
-    </p>
-
-    <p class="publicado-texto">
-        A viaxe rematou,<br>
-        pero a historia continúa.
-    </p>
+            <div
+                id="publicado"
+                class="publicado"
+                hidden>
 
 
-    <div class="enlaces-recordo">
-
-        <a
-            id="boton-video"
-            class="boton-recordo"
-            href="#"
-            aria-label="Ver a nosa viaxe">
-
-            ▶&nbsp; VER A NOSA VIAXE
-
-        </a>
+                <p class="publicado-titulo">
+                    Xa está aquí ♡
+                </p>
 
 
-        <a
-            id="boton-fotos"
-            class="boton-recordo"
-            href="#"
-            aria-label="Ver as fotos da nosa viaxe">
-
-            ♡&nbsp; VER AS FOTOS
-
-        </a>
-
-    </div>
+                <p class="publicado-texto">
+                    A viaxe rematou,<br>
+                    pero a historia continúa.
+                </p>
 
 
-    <div class="final-viaxe">
+                <!-- BOTÓNS -->
 
-        <div class="final-corazon">
-            ♡
-        </div>
+                <div class="enlaces-recordo">
 
-        <p class="final-mensaxe">
-            Grazas por acompañarnos
-            nesta viaxe.
-        </p>
 
-        <p class="final-estrada">
-            A estrada segue.
-        </p>
+                    <a
+                        id="boton-video"
+                        class="boton-recordo"
+                        href="#"
+                        aria-label="Ver a nosa viaxe">
 
-        <p class="ruta-completada">
-            RUTA COMPLETADA
-        </p>
+                        ▶&nbsp; VER A NOSA VIAXE
 
-        <p class="data-final">
-            03 · 10 · 2026
-        </p>
+                    </a>
 
-    </div>
 
-</div>
+                    <a
+                        id="boton-fotos"
+                        class="boton-recordo"
+                        href="#"
+                        aria-label="Ver as fotos da nosa viaxe">
+
+                        ♡&nbsp; VER AS FOTOS
+
+                    </a>
+
+
+                </div>
+
+
+                <!-- FINAL DA VIAXE -->
+
+                <div class="final-viaxe">
+
+
+                    <div class="final-corazon">
+                        ♡
+                    </div>
+
+
+                    <p class="final-mensaxe">
+                        Grazas por acompañarnos
+                        nesta viaxe.
+                    </p>
+
+
+                    <p class="final-estrada">
+                        A estrada segue.
+                    </p>
+
+
+                    <p class="ruta-completada">
+                        RUTA COMPLETADA
+                    </p>
+
+
+                    <p class="data-final">
+                        03 · 10 · 2026
+                    </p>
+
+
+                </div>
+
+
+            </div>
 
 
         </section>
@@ -192,111 +264,211 @@
     </main>
 
 
+
+    <!-- =================================================
+         CONTA ATRÁS
+         ================================================= -->
+
+
     <script>
+
         (function () {
 
             "use strict";
 
+
             /*
-             * 3 de outubro de 2026 ás 13:00,
-             * hora peninsular española (CEST, UTC+2).
+             * 3 de outubro de 2026 ás 13:00.
+             *
+             * Hora peninsular española:
+             * CEST · UTC+2
              */
+
             const dataPublicacion =
-                new Date("2026-10-03T13:00:00+02:00").getTime();
+                new Date(
+                    "2026-10-03T13:00:00+02:00"
+                ).getTime();
 
 
             const elementoDias =
                 document.getElementById("dias");
 
+
             const elementoHoras =
                 document.getElementById("horas");
+
 
             const elementoMinutos =
                 document.getElementById("minutos");
 
+
             const elementoSegundos =
                 document.getElementById("segundos");
 
+
             const contaAtras =
                 document.getElementById("conta-atras");
+
 
             const publicado =
                 document.getElementById("publicado");
 
 
+
             function actualizarContaAtras() {
 
-                const agora = Date.now();
+
+                const agora =
+                    Date.now();
+
 
                 const diferenza =
                     dataPublicacion - agora;
 
 
+
+                /*
+                 * Cando chega o momento:
+                 * ocultamos a conta atrás
+                 * e mostramos o contido final.
+                 */
+
                 if (diferenza <= 0) {
 
-                    contaAtras.hidden = true;
+                    contaAtras.hidden =
+                        true;
 
-                    publicado.hidden = false;
+                    publicado.hidden =
+                        false;
 
                     return false;
                 }
 
 
+
+                /*
+                 * DÍAS
+                 */
+
                 const dias =
                     Math.floor(
-                        diferenza / (1000 * 60 * 60 * 24)
+                        diferenza /
+                        (1000 * 60 * 60 * 24)
                     );
+
+
+
+                /*
+                 * HORAS
+                 */
 
                 const horas =
                     Math.floor(
-                        (diferenza / (1000 * 60 * 60)) % 24
+                        (
+                            diferenza /
+                            (1000 * 60 * 60)
+                        ) % 24
                     );
+
+
+
+                /*
+                 * MINUTOS
+                 */
 
                 const minutos =
                     Math.floor(
-                        (diferenza / (1000 * 60)) % 60
+                        (
+                            diferenza /
+                            (1000 * 60)
+                        ) % 60
                     );
+
+
+
+                /*
+                 * SEGUNDOS
+                 */
 
                 const segundos =
                     Math.floor(
-                        (diferenza / 1000) % 60
+                        (
+                            diferenza /
+                            1000
+                        ) % 60
                     );
 
+
+
+                /*
+                 * ACTUALIZAMOS A PANTALLA
+                 */
 
                 elementoDias.textContent =
                     String(dias);
 
+
                 elementoHoras.textContent =
-                    String(horas).padStart(2, "0");
+                    String(horas)
+                        .padStart(2, "0");
+
 
                 elementoMinutos.textContent =
-                    String(minutos).padStart(2, "0");
+                    String(minutos)
+                        .padStart(2, "0");
+
 
                 elementoSegundos.textContent =
-                    String(segundos).padStart(2, "0");
+                    String(segundos)
+                        .padStart(2, "0");
+
 
 
                 return true;
+
             }
 
+
+
+            /*
+             * Primeira actualización
+             */
 
             actualizarContaAtras();
 
 
+
+            /*
+             * Actualizamos cada segundo
+             */
+
             const intervalo =
-                setInterval(function () {
+                setInterval(
+                    function () {
 
-                    const activa =
-                        actualizarContaAtras();
 
-                    if (!activa) {
-                        clearInterval(intervalo);
-                    }
+                        const activa =
+                            actualizarContaAtras();
 
-                }, 1000);
+
+                        if (!activa) {
+
+                            clearInterval(
+                                intervalo
+                            );
+
+                        }
+
+
+                    },
+                    1000
+                );
+
 
         })();
+
     </script>
+
 
 </body>
 
