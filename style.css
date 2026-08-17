@@ -120,21 +120,36 @@ h1 {
    CORAZÓN
    ===================================================== */
 
+
 .separador {
-    margin: 29px 0 27px;
+    margin: 28px auto 27px;
+
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     font-family:
         "Special Elite",
         "Courier New",
         monospace;
 
-    font-size: 23px;
-
-    font-weight: 400;
+    font-size: 19px;
 
     line-height: 1;
 
-    opacity: 0.68;
+    opacity: 0.72;
+
+    border:
+        1px solid rgba(45, 41, 37, 0.55);
+
+    border-radius: 50%;
+
+    transform: rotate(-4deg);
+
+    position: relative;
 }
 
 
@@ -452,14 +467,17 @@ h1 {
     }
 
 
-    .separador {
-        margin:
-            25px
-            0
-            23px;
+   .separador {
+    width: 48px;
+    height: 48px;
 
-        font-size: 22px;
-    }
+    font-size: 17px;
+
+    margin:
+        25px
+        auto
+        23px;
+}
 
 
     .principal {
