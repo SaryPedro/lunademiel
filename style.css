@@ -424,22 +424,32 @@ h1 {
    MÓBIL
    ===================================================== */
 
+
 @media (max-width: 480px) {
+
+    /* -------------------------
+       CONTEDOR
+       ------------------------- */
 
     .contenedor {
         padding: 18px 12px;
     }
 
 
+    /* -------------------------
+       TARXETA
+       ------------------------- */
+
     .tarxeta {
-        padding:
-            42px
-            22px
-            38px;
+        padding: 42px 22px 38px;
 
         border-radius: 4px;
     }
 
+
+    /* -------------------------
+       PEQUENO TÍTULO
+       ------------------------- */
 
     .pre-titulo {
         font-size: 9px;
@@ -450,19 +460,59 @@ h1 {
     }
 
 
+    /* -------------------------
+       TÍTULO PRINCIPAL
+       ------------------------- */
+
     h1 {
         font-size: 46px;
 
         line-height: 1.04;
+
+        letter-spacing: 0.3px;
     }
 
+
+    /* -------------------------
+       CORAZÓN
+       ------------------------- */
+
+    .separador {
+        margin: 25px 0 23px;
+
+        font-size: 23px;
+
+        letter-spacing: 0;
+
+        transform: none;
+    }
+
+
+    /* -------------------------
+       IMAXE
+       ------------------------- */
+
+    .imaxe-portada {
+        margin-bottom: 27px;
+    }
+
+
+    /* -------------------------
+       TEXTO PRINCIPAL
+       ------------------------- */
 
     .principal {
         font-size: 17px;
 
         line-height: 1.7;
+
+        margin-bottom: 15px;
     }
 
+
+    /* -------------------------
+       TEXTO SECUNDARIO
+       ------------------------- */
 
     .secundario {
         font-size: 13px;
@@ -471,19 +521,31 @@ h1 {
     }
 
 
+    /* -------------------------
+       CONTA ATRÁS
+       ------------------------- */
+
     .conta-atras {
         margin-top: 30px;
     }
 
+
+    /* Texto superior */
 
     .conta-titulo {
         font-size: 9px;
 
         letter-spacing: 1.2px;
 
+        line-height: 1.6;
+
         margin-bottom: 17px;
     }
 
+
+    /* -------------------------
+       NÚMEROS
+       ------------------------- */
 
     .contador {
         gap: 5px;
@@ -503,9 +565,15 @@ h1 {
     .unidade small {
         font-size: 8px;
 
+        letter-spacing: 0.8px;
+
         margin-top: 7px;
     }
 
+
+    /* -------------------------
+       SEPARADORES : 
+       ------------------------- */
 
     .separador-contador {
         font-size: 18px;
@@ -514,19 +582,39 @@ h1 {
     }
 
 
+    /* -------------------------
+       DATA
+       ------------------------- */
+
     .data-publicacion {
         font-size: 11px;
+
+        letter-spacing: 0.8px;
 
         margin-top: 19px;
     }
 
 
+    /* -------------------------
+       DESPOIS DA PUBLICACIÓN
+       ------------------------- */
+
+    .publicado {
+        margin-top: 30px;
+    }
+
+
     .publicado-titulo {
         font-size: 24px;
+
+        line-height: 1.25;
     }
 
 
     .publicado-texto {
         font-size: 13px;
+
+        line-height: 1.8;
     }
+
 }
