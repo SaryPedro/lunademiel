@@ -1,8 +1,8 @@
 /* =====================================================
-   FONTES
+   FONTE
    ===================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
 
 /* =====================================================
@@ -117,22 +117,24 @@ h1 {
 
 
 /* =====================================================
-   CORAZÓN / SEPARADOR
+   CORAZÓN
    ===================================================== */
 
 .separador {
     margin: 29px 0 27px;
 
     font-family:
-        "Cormorant Garamond",
-        Georgia,
-        serif;
+        "Special Elite",
+        "Courier New",
+        monospace;
 
-    font-size: 25px;
+    font-size: 23px;
 
     font-weight: 400;
 
-    opacity: 0.65;
+    line-height: 1;
+
+    opacity: 0.68;
 }
 
 
@@ -170,37 +172,41 @@ h1 {
 }
 
 
-/* Texto principal */
+/* =====================================================
+   TEXTO PRINCIPAL
+   ===================================================== */
 
 .principal {
     font-family:
-        "Cormorant Garamond",
-        Georgia,
-        serif;
+        "Courier New",
+        Courier,
+        monospace;
 
-    font-size: 23px;
+    font-size: 18px;
 
-    line-height: 1.35;
+    line-height: 1.7;
 
     font-weight: 400;
 
-    font-style: italic;
+    font-style: normal;
 
     margin-bottom: 17px;
 }
 
 
-/* Texto secundario */
+/* =====================================================
+   TEXTO SECUNDARIO
+   ===================================================== */
 
 .secundario {
     font-family:
-        "Cormorant Garamond",
-        Georgia,
-        serif;
+        "Courier New",
+        Courier,
+        monospace;
 
-    font-size: 17px;
+    font-size: 14px;
 
-    line-height: 1.65;
+    line-height: 1.8;
 
     font-weight: 400;
 
@@ -217,7 +223,7 @@ h1 {
 }
 
 
-/* Texto "O noso recordo..." */
+/* Texto superior da conta atrás */
 
 .conta-titulo {
     font-family:
@@ -239,7 +245,9 @@ h1 {
 }
 
 
-/* Números */
+/* =====================================================
+   NÚMEROS DA CONTA ATRÁS
+   ===================================================== */
 
 .contador {
     display: flex;
@@ -279,11 +287,11 @@ h1 {
     margin-top: 8px;
 
     font-family:
-        "Cormorant Garamond",
-        Georgia,
-        serif;
+        "Courier New",
+        Courier,
+        monospace;
 
-    font-size: 12px;
+    font-size: 9px;
 
     letter-spacing: 1px;
 
@@ -293,7 +301,9 @@ h1 {
 }
 
 
-/* ":" entre números */
+/* =====================================================
+   SEPARADORES DA CONTA ATRÁS
+   ===================================================== */
 
 .separador-contador {
     font-family:
@@ -309,21 +319,23 @@ h1 {
 }
 
 
-/* Data */
+/* =====================================================
+   DATA DE PUBLICACIÓN
+   ===================================================== */
 
 .data-publicacion {
     margin-top: 21px;
 
     font-family:
-        "Cormorant Garamond",
-        Georgia,
-        serif;
+        "Courier New",
+        Courier,
+        monospace;
 
-    font-size: 14px;
+    font-size: 12px;
 
-    font-weight: 500;
+    font-weight: 400;
 
-    letter-spacing: 1.2px;
+    letter-spacing: 1px;
 
     opacity: 0.58;
 }
@@ -352,13 +364,13 @@ h1 {
 
 .publicado-texto {
     font-family:
-        "Cormorant Garamond",
-        Georgia,
-        serif;
+        "Courier New",
+        Courier,
+        monospace;
 
-    font-size: 17px;
+    font-size: 14px;
 
-    line-height: 1.65;
+    line-height: 1.8;
 
     opacity: 0.72;
 }
@@ -366,8 +378,6 @@ h1 {
 
 /* =====================================================
    ESTADO ANTIGO
-   Mantemos estas regras por seguridade,
-   aínda que xa non se usan na páxina.
    ===================================================== */
 
 .estado {
@@ -448,21 +458,21 @@ h1 {
             0
             23px;
 
-        font-size: 23px;
+        font-size: 22px;
     }
 
 
     .principal {
-        font-size: 21px;
+        font-size: 17px;
 
-        line-height: 1.4;
+        line-height: 1.7;
     }
 
 
     .secundario {
-        font-size: 16px;
+        font-size: 13px;
 
-        line-height: 1.65;
+        line-height: 1.8;
     }
 
 
@@ -496,7 +506,7 @@ h1 {
 
 
     .unidade small {
-        font-size: 10px;
+        font-size: 8px;
 
         margin-top: 7px;
     }
@@ -510,7 +520,7 @@ h1 {
 
 
     .data-publicacion {
-        font-size: 13px;
+        font-size: 11px;
 
         margin-top: 19px;
     }
@@ -522,6 +532,6 @@ h1 {
 
 
     .publicado-texto {
-        font-size: 16px;
+        font-size: 13px;
     }
 }
