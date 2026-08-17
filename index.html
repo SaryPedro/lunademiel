@@ -62,19 +62,185 @@
 
             </div>
 
-            <div class="estado">
 
-                <span class="punto"></span>
+            <!-- CONTA ATRÁS -->
 
-                <span>
-                    O vídeo chegará pronto...
-                </span>
+            <div id="conta-atras" class="conta-atras">
+
+                <p class="conta-titulo">
+                    O noso recordo estará dispoñible en...
+                </p>
+
+                <div class="contador">
+
+                    <div class="unidade">
+                        <span id="dias">--</span>
+                        <small>días</small>
+                    </div>
+
+                    <span class="separador-contador">:</span>
+
+                    <div class="unidade">
+                        <span id="horas">--</span>
+                        <small>horas</small>
+                    </div>
+
+                    <span class="separador-contador">:</span>
+
+                    <div class="unidade">
+                        <span id="minutos">--</span>
+                        <small>min</small>
+                    </div>
+
+                    <span class="separador-contador">:</span>
+
+                    <div class="unidade">
+                        <span id="segundos">--</span>
+                        <small>seg</small>
+                    </div>
+
+                </div>
+
+                <p class="data-publicacion">
+                    3 de outubro de 2026 · 13:00
+                </p>
 
             </div>
+
+
+            <!-- MENSAXE QUE APARECERÁ DESPOIS DA DATA -->
+
+            <div id="publicado"
+                 class="publicado"
+                 hidden>
+
+                <p class="publicado-titulo">
+                    Xa está aquí! ❤️
+                </p>
+
+                <p class="publicado-texto">
+                    Grazas por formar parte
+                    da nosa historia.
+                </p>
+
+                <!--
+                Aquí engadiremos posteriormente
+                o botón do vídeo e as fotos.
+                -->
+
+            </div>
+
 
         </section>
 
     </main>
+
+
+    <script>
+        (function () {
+
+            "use strict";
+
+            /*
+             * 3 de outubro de 2026 ás 13:00,
+             * hora peninsular española (CEST, UTC+2).
+             */
+            const dataPublicacion =
+                new Date("2026-10-03T13:00:00+02:00").getTime();
+
+
+            const elementoDias =
+                document.getElementById("dias");
+
+            const elementoHoras =
+                document.getElementById("horas");
+
+            const elementoMinutos =
+                document.getElementById("minutos");
+
+            const elementoSegundos =
+                document.getElementById("segundos");
+
+            const contaAtras =
+                document.getElementById("conta-atras");
+
+            const publicado =
+                document.getElementById("publicado");
+
+
+            function actualizarContaAtras() {
+
+                const agora = Date.now();
+
+                const diferenza =
+                    dataPublicacion - agora;
+
+
+                if (diferenza <= 0) {
+
+                    contaAtras.hidden = true;
+
+                    publicado.hidden = false;
+
+                    return false;
+                }
+
+
+                const dias =
+                    Math.floor(
+                        diferenza / (1000 * 60 * 60 * 24)
+                    );
+
+                const horas =
+                    Math.floor(
+                        (diferenza / (1000 * 60 * 60)) % 24
+                    );
+
+                const minutos =
+                    Math.floor(
+                        (diferenza / (1000 * 60)) % 60
+                    );
+
+                const segundos =
+                    Math.floor(
+                        (diferenza / 1000) % 60
+                    );
+
+
+                elementoDias.textContent =
+                    String(dias);
+
+                elementoHoras.textContent =
+                    String(horas).padStart(2, "0");
+
+                elementoMinutos.textContent =
+                    String(minutos).padStart(2, "0");
+
+                elementoSegundos.textContent =
+                    String(segundos).padStart(2, "0");
+
+
+                return true;
+            }
+
+
+            actualizarContaAtras();
+
+
+            const intervalo =
+                setInterval(function () {
+
+                    const activa =
+                        actualizarContaAtras();
+
+                    if (!activa) {
+                        clearInterval(intervalo);
+                    }
+
+                }, 1000);
+
+        })();
+    </script>
 
 </body>
 
