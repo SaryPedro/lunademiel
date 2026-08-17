@@ -30,7 +30,7 @@ body {
     background:
         radial-gradient(
             circle at 20% 20%,
-            rgba(255,255,255,0.28),
+            rgba(255, 255, 255, 0.28),
             transparent 35%
         ),
         #f3eee6;
@@ -84,11 +84,6 @@ body {
    PESPUNTE
    ===================================================== */
 
-/*
- * Un segundo bordo interior para dar sensación
- * de peza de coiro / caderno de viaxe.
- */
-
 .tarxeta::before {
     content: "";
 
@@ -109,27 +104,34 @@ body {
 
 
 /* =====================================================
-   PEQUENO TÍTULO SUPERIOR
+   N2 · PORTUGAL · 2026
    ===================================================== */
 
-.pre-titulo {
+.identificador-viaxe {
     position: relative;
     z-index: 1;
+
+    display: inline-block;
+
+    margin-bottom: 20px;
+
+    padding: 5px 10px;
+
+    border:
+        1px solid rgba(45, 41, 37, 0.25);
 
     font-family:
         "Special Elite",
         "Courier New",
         monospace;
 
-    font-size: 10px;
+    font-size: 8px;
 
-    letter-spacing: 2.5px;
+    letter-spacing: 1.8px;
 
-    text-transform: uppercase;
+    line-height: 1.2;
 
-    margin-bottom: 20px;
-
-    opacity: 0.62;
+    opacity: 0.58;
 }
 
 
@@ -155,38 +157,6 @@ h1 {
     letter-spacing: 0.5px;
 
     text-transform: uppercase;
-}
-
-
-/* =====================================================
-   PEQUENO IDENTIFICADOR DA VIAXE
-   ===================================================== */
-
-.identificador-viaxe {
-    position: relative;
-    z-index: 1;
-
-    display: inline-block;
-
-    margin-top: 18px;
-
-    padding: 5px 10px;
-
-    border:
-        1px solid rgba(45, 41, 37, 0.25);
-
-    font-family:
-        "Special Elite",
-        "Courier New",
-        monospace;
-
-    font-size: 8px;
-
-    letter-spacing: 1.8px;
-
-    line-height: 1.2;
-
-    opacity: 0.58;
 }
 
 
@@ -244,31 +214,7 @@ h1 {
 
 
 /* =====================================================
-   PEQUENA LIÑA DECORATIVA
-   ===================================================== */
-
-.imaxe-portada::after {
-    content: "N2 · PORTUGAL · 2026";
-
-    display: block;
-
-    margin-top: 10px;
-
-    font-family:
-        "Special Elite",
-        "Courier New",
-        monospace;
-
-    font-size: 8px;
-
-    letter-spacing: 1.8px;
-
-    opacity: 0.42;
-}
-
-
-/* =====================================================
-   MENSAXE
+   MENSAxe
    ===================================================== */
 
 .mensaxe {
@@ -336,7 +282,7 @@ h1 {
 
 
 /* =====================================================
-   TEXTO SUPERIOR DA CONTA ATRÁS
+   TÍTULO DA CONTA ATRÁS
    ===================================================== */
 
 .conta-titulo {
@@ -360,7 +306,7 @@ h1 {
 
 
 /* =====================================================
-   NÚMEROS
+   NÚMEROS DA CONTA ATRÁS
    ===================================================== */
 
 .contador {
@@ -416,7 +362,7 @@ h1 {
 
 
 /* =====================================================
-   SEPARADORES
+   SEPARADORES DA CONTA ATRÁS
    ===================================================== */
 
 .separador-contador {
@@ -434,7 +380,7 @@ h1 {
 
 
 /* =====================================================
-   DATA
+   DATA DE PUBLICACIÓN
    ===================================================== */
 
 .data-publicacion {
@@ -661,12 +607,14 @@ h1 {
     }
 
 
-    .pre-titulo {
-        font-size: 9px;
-
-        letter-spacing: 2px;
-
+    .identificador-viaxe {
         margin-bottom: 17px;
+
+        padding: 5px 9px;
+
+        font-size: 7px;
+
+        letter-spacing: 1.5px;
     }
 
 
@@ -676,17 +624,6 @@ h1 {
         line-height: 1.04;
 
         letter-spacing: 0.3px;
-    }
-
-
-    .identificador-viaxe {
-        margin-top: 15px;
-
-        padding: 5px 9px;
-
-        font-size: 7px;
-
-        letter-spacing: 1.5px;
     }
 
 
@@ -701,15 +638,6 @@ h1 {
         margin-bottom: 27px;
 
         border-radius: 6px;
-    }
-
-
-    .imaxe-portada::after {
-        margin-top: 8px;
-
-        font-size: 7px;
-
-        letter-spacing: 1.5px;
     }
 
 
