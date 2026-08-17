@@ -27,7 +27,13 @@ html {
 body {
     min-height: 100vh;
 
-    background: #f3eee6;
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(255,255,255,0.28),
+            transparent 35%
+        ),
+        #f3eee6;
 
     color: #292622;
 
@@ -56,19 +62,49 @@ body {
    ===================================================== */
 
 .tarxeta {
+    position: relative;
+
     width: 100%;
     max-width: 560px;
 
-    background: rgba(255, 253, 249, 0.96);
+    background: #fffdf9;
 
-    padding: 54px 42px 48px;
+    padding: 56px 44px 50px;
 
     text-align: center;
 
-    border-radius: 6px;
+    border-radius: 16px;
 
     box-shadow:
-        0 18px 55px rgba(45, 41, 37, 0.09);
+        0 18px 55px rgba(45, 41, 37, 0.10);
+}
+
+
+/* =====================================================
+   PESPUNTE
+   ===================================================== */
+
+/*
+ * Un segundo bordo interior para dar sensación
+ * de peza de coiro / caderno de viaxe.
+ */
+
+.tarxeta::before {
+    content: "";
+
+    position: absolute;
+
+    top: 14px;
+    right: 14px;
+    bottom: 14px;
+    left: 14px;
+
+    border:
+        1px dashed rgba(45, 41, 37, 0.28);
+
+    border-radius: 11px;
+
+    pointer-events: none;
 }
 
 
@@ -77,6 +113,9 @@ body {
    ===================================================== */
 
 .pre-titulo {
+    position: relative;
+    z-index: 1;
+
     font-family:
         "Special Elite",
         "Courier New",
@@ -99,6 +138,9 @@ body {
    ===================================================== */
 
 h1 {
+    position: relative;
+    z-index: 1;
+
     font-family:
         "Special Elite",
         "Courier New",
@@ -117,18 +159,53 @@ h1 {
 
 
 /* =====================================================
-   CORAZÓN
+   PEQUENO IDENTIFICADOR DA VIAXE
    ===================================================== */
 
-.separador {
-    margin: 28px 0 27px;
+.identificador-viaxe {
+    position: relative;
+    z-index: 1;
+
+    display: inline-block;
+
+    margin-top: 18px;
+
+    padding: 5px 10px;
+
+    border:
+        1px solid rgba(45, 41, 37, 0.25);
 
     font-family:
         "Special Elite",
         "Courier New",
         monospace;
 
-    font-size: 25px;
+    font-size: 8px;
+
+    letter-spacing: 1.8px;
+
+    line-height: 1.2;
+
+    opacity: 0.58;
+}
+
+
+/* =====================================================
+   CORAZÓN
+   ===================================================== */
+
+.separador {
+    position: relative;
+    z-index: 1;
+
+    margin: 25px 0 27px;
+
+    font-family:
+        "Special Elite",
+        "Courier New",
+        monospace;
+
+    font-size: 24px;
 
     line-height: 1;
 
@@ -143,11 +220,16 @@ h1 {
    ===================================================== */
 
 .imaxe-portada {
+    position: relative;
+    z-index: 1;
+
     width: 100%;
 
     overflow: hidden;
 
     margin-bottom: 31px;
+
+    border-radius: 8px;
 }
 
 .imaxe-portada img {
@@ -162,10 +244,37 @@ h1 {
 
 
 /* =====================================================
+   PEQUENA LIÑA DECORATIVA
+   ===================================================== */
+
+.imaxe-portada::after {
+    content: "N2 · PORTUGAL · 2026";
+
+    display: block;
+
+    margin-top: 10px;
+
+    font-family:
+        "Special Elite",
+        "Courier New",
+        monospace;
+
+    font-size: 8px;
+
+    letter-spacing: 1.8px;
+
+    opacity: 0.42;
+}
+
+
+/* =====================================================
    MENSAXE
    ===================================================== */
 
 .mensaxe {
+    position: relative;
+    z-index: 1;
+
     max-width: 430px;
 
     margin: 0 auto 30px;
@@ -219,11 +328,16 @@ h1 {
    ===================================================== */
 
 .conta-atras {
+    position: relative;
+    z-index: 1;
+
     margin-top: 34px;
 }
 
 
-/* Texto superior da conta atrás */
+/* =====================================================
+   TEXTO SUPERIOR DA CONTA ATRÁS
+   ===================================================== */
 
 .conta-titulo {
     font-family:
@@ -246,7 +360,7 @@ h1 {
 
 
 /* =====================================================
-   NÚMEROS DA CONTA ATRÁS
+   NÚMEROS
    ===================================================== */
 
 .contador {
@@ -302,7 +416,7 @@ h1 {
 
 
 /* =====================================================
-   SEPARADORES DA CONTA ATRÁS
+   SEPARADORES
    ===================================================== */
 
 .separador-contador {
@@ -320,7 +434,7 @@ h1 {
 
 
 /* =====================================================
-   DATA DE PUBLICACIÓN
+   DATA
    ===================================================== */
 
 .data-publicacion {
@@ -346,6 +460,9 @@ h1 {
    ===================================================== */
 
 .publicado {
+    position: relative;
+    z-index: 1;
+
     margin-top: 34px;
 }
 
@@ -377,7 +494,7 @@ h1 {
 
 
 /* =====================================================
-   BOTÓNS DO RECORDO
+   BOTÓNS
    ===================================================== */
 
 .enlaces-recordo {
@@ -391,7 +508,6 @@ h1 {
 
     margin-top: 28px;
 }
-
 
 .boton-recordo {
     display: inline-block;
@@ -425,7 +541,6 @@ h1 {
         color 0.2s ease;
 }
 
-
 .boton-recordo:hover {
     background: #292622;
 
@@ -443,9 +558,8 @@ h1 {
     padding-top: 30px;
 
     border-top:
-        1px solid rgba(45, 41, 37, 0.14);
+        1px dashed rgba(45, 41, 37, 0.20);
 }
-
 
 .final-corazon {
     font-family:
@@ -462,7 +576,6 @@ h1 {
     margin-bottom: 20px;
 }
 
-
 .final-mensaxe {
     font-family:
         "Courier New",
@@ -478,7 +591,6 @@ h1 {
     margin-bottom: 5px;
 }
 
-
 .final-estrada {
     font-family:
         "Special Elite",
@@ -491,7 +603,6 @@ h1 {
 
     margin-bottom: 32px;
 }
-
 
 .ruta-completada {
     font-family:
@@ -507,7 +618,6 @@ h1 {
 
     margin-bottom: 8px;
 }
-
 
 .data-final {
     font-family:
@@ -529,29 +639,27 @@ h1 {
 
 @media (max-width: 480px) {
 
-    /* -------------------------
-       CONTEDOR
-       ------------------------- */
-
     .contenedor {
         padding: 18px 12px;
     }
 
 
-    /* -------------------------
-       TARXETA
-       ------------------------- */
-
     .tarxeta {
         padding: 42px 22px 38px;
 
-        border-radius: 4px;
+        border-radius: 14px;
     }
 
 
-    /* -------------------------
-       PEQUENO TÍTULO
-       ------------------------- */
+    .tarxeta::before {
+        top: 11px;
+        right: 11px;
+        bottom: 11px;
+        left: 11px;
+
+        border-radius: 10px;
+    }
+
 
     .pre-titulo {
         font-size: 9px;
@@ -562,10 +670,6 @@ h1 {
     }
 
 
-    /* -------------------------
-       TÍTULO PRINCIPAL
-       ------------------------- */
-
     h1 {
         font-size: 46px;
 
@@ -575,31 +679,39 @@ h1 {
     }
 
 
-    /* -------------------------
-       CORAZÓN
-       ------------------------- */
+    .identificador-viaxe {
+        margin-top: 15px;
 
-    .separador {
-        margin: 25px 0 23px;
+        padding: 5px 9px;
 
-        font-size: 23px;
+        font-size: 7px;
 
-        letter-spacing: 0;
+        letter-spacing: 1.5px;
     }
 
 
-    /* -------------------------
-       IMAXE
-       ------------------------- */
+    .separador {
+        margin: 23px 0 23px;
+
+        font-size: 23px;
+    }
+
 
     .imaxe-portada {
         margin-bottom: 27px;
+
+        border-radius: 6px;
     }
 
 
-    /* -------------------------
-       TEXTO PRINCIPAL
-       ------------------------- */
+    .imaxe-portada::after {
+        margin-top: 8px;
+
+        font-size: 7px;
+
+        letter-spacing: 1.5px;
+    }
+
 
     .principal {
         font-size: 17px;
@@ -610,20 +722,12 @@ h1 {
     }
 
 
-    /* -------------------------
-       TEXTO SECUNDARIO
-       ------------------------- */
-
     .secundario {
         font-size: 13px;
 
         line-height: 1.8;
     }
 
-
-    /* -------------------------
-       CONTA ATRÁS
-       ------------------------- */
 
     .conta-atras {
         margin-top: 30px;
@@ -640,10 +744,6 @@ h1 {
         margin-bottom: 17px;
     }
 
-
-    /* -------------------------
-       NÚMEROS
-       ------------------------- */
 
     .contador {
         gap: 5px;
@@ -669,20 +769,12 @@ h1 {
     }
 
 
-    /* -------------------------
-       SEPARADORES
-       ------------------------- */
-
     .separador-contador {
         font-size: 18px;
 
         margin-bottom: 15px;
     }
 
-
-    /* -------------------------
-       DATA
-       ------------------------- */
 
     .data-publicacion {
         font-size: 11px;
@@ -692,10 +784,6 @@ h1 {
         margin-top: 19px;
     }
 
-
-    /* -------------------------
-       DESPOIS DA PUBLICACIÓN
-       ------------------------- */
 
     .publicado {
         margin-top: 30px;
@@ -716,10 +804,6 @@ h1 {
     }
 
 
-    /* -------------------------
-       BOTÓNS
-       ------------------------- */
-
     .enlaces-recordo {
         margin-top: 25px;
 
@@ -735,10 +819,6 @@ h1 {
         font-size: 10px;
     }
 
-
-    /* -------------------------
-       FINAL
-       ------------------------- */
 
     .final-viaxe {
         margin-top: 45px;
