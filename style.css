@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="gl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Un pequeno recordo da nosa lúa de mel.">
+
+    <meta name="robots"
+          content="noindex, nofollow">
+
+    <meta name="referrer"
+          content="no-referrer">
+
+    <title>A nosa lúa de mel ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="contenedor">
+
+        <section class="tarxeta">
+
+            <p class="pre-titulo">
+                UN PEQUENO RECORDO
+            </p>
+
+            <h1>
+                A nosa<br>
+                lúa de mel
+            </h1>
+
+            <div class="separador">
+                ♥
+            </div>
+
+            <div class="imaxe-portada">
+
+                <img
+                    src="fondo.webp"
+                    alt="Ilustración da nosa lúa de mel"
+                    loading="eager">
+
+            </div>
+
+            <div class="mensaxe">
+
+                <p class="principal">
+                    Agora mesmo estamos<br>
+                    vivindo a aventura.
+                </p>
+
+                <p class="secundario">
+                    Cando volvamos teremos
+                    un pequeno recordo que compartir contigo.
+                </p>
+
+            </div>
+
+            <div class="estado">
+
+                <span class="punto"></span>
+
+                <span>
+                    O vídeo chegará pronto...
+                </span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
