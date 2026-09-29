@@ -181,7 +181,7 @@ h1 {
 
 
 /* =====================================================
-   IMAXE
+   IMAXE DE PORTADA
    ===================================================== */
 
 .imaxe-portada {
@@ -205,6 +205,7 @@ h1 {
 
     object-fit: cover;
 }
+
 
 /* =====================================================
    MENSAxe
@@ -544,6 +545,112 @@ h1 {
     transform: translateY(0);
 }
 
+
+/* =====================================================
+   VÍDEO
+   ===================================================== */
+
+.video-viaxe {
+    margin-top: 55px;
+}
+
+.video-viaxe h2,
+.fotos-viaxe h2 {
+    font-family:
+        "Special Elite",
+        "Courier New",
+        monospace;
+
+    font-size: 19px;
+
+    font-weight: 400;
+
+    line-height: 1.3;
+
+    margin-bottom: 20px;
+}
+
+.marco-video {
+    width: 100%;
+
+    overflow: hidden;
+
+    border-radius: 9px;
+
+    background: #292622;
+}
+
+.marco-video video {
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+}
+
+
+/* =====================================================
+   GALERÍA DE FOTOS
+   ===================================================== */
+
+.fotos-viaxe {
+    margin-top: 55px;
+}
+
+.galeria {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 10px;
+}
+
+
+/*
+ * Tratamento común para todas as fotografías.
+ *
+ * É deliberadamente moi sutil:
+ * - un pouco máis de contraste
+ * - cores lixeiramente máis vivas
+ * - pequena corrección de luminosidade
+ *
+ * Non afecta á portada nin ao vídeo.
+ */
+
+.galeria img {
+    display: block;
+
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+
+    border-radius: 7px;
+
+    filter:
+        contrast(1.05)
+        saturate(1.10)
+        brightness(1.02);
+
+    transition:
+        filter 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+/* Pequeno efecto ao pasar o rato */
+
+.galeria img:hover {
+    filter:
+        contrast(1.07)
+        saturate(1.14)
+        brightness(1.03);
+
+    transform: scale(1.015);
+}
+
+
 /* =====================================================
    FINAL DA VIAXE
    ===================================================== */
@@ -658,11 +765,11 @@ h1 {
 
 
     .identificador-viaxe {
-          margin-bottom: 18px;
+        margin-bottom: 18px;
 
-    font-size: 9px;
+        font-size: 9px;
 
-    letter-spacing: 1.7px;
+        letter-spacing: 1.7px;
     }
 
 
@@ -684,7 +791,9 @@ h1 {
 
     .imaxe-portada {
         margin-bottom: 27px;
+
         border-radius: 8px;
+    }
 
 
     .principal {
@@ -778,27 +887,56 @@ h1 {
     }
 
 
-   .enlaces-recordo {
-    margin-top: 26px;
+    .enlaces-recordo {
+        margin-top: 26px;
 
-    gap: 10px;
-}
-
-
-.boton-recordo {
-    max-width: 260px;
-
-    padding: 13px 15px;
-
-    font-size: 10px;
-
-    letter-spacing: 0.8px;
-}
+        gap: 10px;
+    }
 
 
-.boton-icono {
-    font-size: 12px;
-}
+    .boton-recordo {
+        max-width: 260px;
+
+        padding: 13px 15px;
+
+        font-size: 10px;
+
+        letter-spacing: 0.8px;
+    }
+
+
+    .boton-icono {
+        font-size: 12px;
+    }
+
+
+    .video-viaxe {
+        margin-top: 45px;
+    }
+
+
+    .video-viaxe h2,
+    .fotos-viaxe h2 {
+        font-size: 17px;
+
+        margin-bottom: 17px;
+    }
+
+
+    .fotos-viaxe {
+        margin-top: 45px;
+    }
+
+
+    .galeria {
+        gap: 7px;
+    }
+
+
+    .galeria img {
+        border-radius: 6px;
+    }
+
 
     .final-viaxe {
         margin-top: 45px;
